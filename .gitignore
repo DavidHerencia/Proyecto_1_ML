@@ -1,1 +1,7 @@
+# Ignorar Virtual Environment
+venv/
+.env
 
+# Ignore .vscode and other
+.vscode/
+notes.txt
