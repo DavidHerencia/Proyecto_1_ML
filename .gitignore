@@ -5,3 +5,4 @@ venv/
 # Ignore .vscode and other
 .vscode/
 notes.txt
+tester.py
