@@ -15,33 +15,39 @@ data_df = pd.read_csv("./datasets/train.csv")
 
 print(data_df.head())
 
-a = sns.jointplot(
-    x="MTO_PIA",
-    y="DEPARTAMENTO",
-    data=data_df,
-    size=8,
-    alpha=0.6,
-    color="k",
-    marker="x",
-)
-b = sns.jointplot(
-    x="MTO_PIA",
-    y="PROVINCIA",
-    data=data_df,
-    size=8,
-    alpha=0.6,
-    color="k",
-    marker="x",
-)
-c = sns.jointplot(
-    x="MTO_PIA",
-    y="UBIGEO",
-    data=data_df,
-    size=8,
-    alpha=0.6,
-    color="k",
-    marker="x",
-)
+
+def scatter(column, r_limit=None):
+    fig, scatter = plt.subplots(figsize=(10, 6), dpi=100)
+    scatter = sns.scatterplot(x="MTO_PIA", y=column, data=data_df)
+
+    scatter.set_xlim(right=r_limit)
+
+    plt.show()
 
 
-plt.show()
+def scatter_log(column):
+    fig, scatter = plt.subplots(figsize=(10, 6), dpi=100)
+    scatter = sns.scatterplot(x="MTO_PIA", y=column, data=data_df)
+    plt.xscale("log")
+
+    plt.show()
+
+
+def joint_plot(column):
+    a = sns.jointplot(
+        x="MTO_PIA",
+        y=column,
+        data=data_df,
+        size=8,
+        alpha=0.6,
+        color="k",
+        marker="x",
+    )
+    plt.show()
+
+
+column = "ESPECIFICA_DET"
+# joint_plot(column)
+# scatter(column, 1000000)
+scatter_log(column)
+# scatter(column)
