@@ -1,6 +1,6 @@
 "Variable","Descripción","Tipo de dato","Tamaño","Recurso relacionado","Información Adicional "
 "FECHA_CORTE","Fecha en el que se genero el dataset","Numérico",8,,"(formato : aaaammdd)"
-"ANO_EJE","Año de ejecución del presupuesto","Numérico",4,,"Período en que se ejecuta el Presupuesto y que coincide con el año calendario, es decir, se inicia el primero de enero y finaliza el treinta y uno de diciembre."
+"ANIO_EJEC","Año de ejecución del presupuesto","Numérico",4,,"Período en que se ejecuta el Presupuesto y que coincide con el año calendario, es decir, se inicia el primero de enero y finaliza el treinta y uno de diciembre."
 "SECTOR","Código y nombre de Sector al que pertenece el Pliego Presupuestal
 40. DESARROLLO E INCLUSION SOCIAL","Alfanumérico",100,,"El Programa Nacional PAIS es un programa social adscrita al Ministerio de Desarrollo e Inclusión Social, que cuenta con autonomía técnica, administrativa, económica y financiera, que recibe un crédito presupuestario en la Ley Anual de Presupuesto del Sector Público."
 "PLIEGO","Código y nombre del pliego presupuestal al que pertenece la Entidad.
