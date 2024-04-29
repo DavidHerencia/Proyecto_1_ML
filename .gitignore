@@ -6,7 +6,6 @@ venv/
 .vscode/
 notes.txt
 tester.py
-data_predicion
 test_TESTER.csv
 train_TESTER.csv
 regresion_lineal_multivariable.ipynb
